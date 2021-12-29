@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
             .appendQueryParameter("mode", "3d_only")
             .build()
         sceneViewerIntent.data = intentUri
-        sceneViewerIntent.setPackage("com.google.ar.core")
+//        sceneViewerIntent.setPackage("com.google.ar.core") // AR-Core app
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox") // Google app
         startActivity(sceneViewerIntent)
     }
 }
